@@ -18,7 +18,7 @@ def validade_and_execute():
     except ValueError:
         print('Your input is not a valid number. Don\'t ruim my program.')
 
-
-user_input = input("Please enter hours: \n")
-
-validade_and_execute()
+user_input = ''
+while user_input != "exit":
+    user_input = input("Hey user, enter a number of days and I will convert it to hours! \n")
+    validade_and_execute()
