@@ -33,3 +33,12 @@ while user_input != "exit":
 
     for num_of_days_element in set(list_of_days):
         validade_and_execute()
+
+
+print("some text")
+input("enter value")
+set([1, 3, 4])
+int("20")
+
+"2, 3".split()
+[1, 2, 3].count()
