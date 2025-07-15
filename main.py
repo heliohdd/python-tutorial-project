@@ -13,17 +13,23 @@ def validade_and_execute():
         if user_input_number > 0:
             calculated_value = days_to_unit(user_input_number)
             print(calculated_value)
-        """elif user_input_number == 0:
+        elif user_input_number == 0:
             print("You entered a 0, please enter a valid positive number")
         else:
-            print("You entered a negative number, please enter a valid positive number")"""
+            print("You entered a negative number, please enter a valid positive number")
     except ValueError:
         print('Your input is not a valid number. Don\'t ruim my program.')
 
 user_input = ''
 while user_input != "exit":
     user_input = input("Hey user, enter number of days as a comma separeted list and I will convert it to hours! \n")
-    print(type(user_input.split(", ")))
-    print(user_input.split(", "))
-    for num_of_days_element in user_input.split(", "):
+    list_of_days = user_input.split(", ")
+
+    print(list_of_days)
+    print(set(list_of_days))
+
+    print(type(list_of_days))
+    print(type(set(list_of_days)))
+
+    for num_of_days_element in set(list_of_days):
         validade_and_execute()
