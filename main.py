@@ -8,7 +8,6 @@ logging.error("This is an error message")
 logging.info("This is an info message")
 
 print(f"The operating system name is: {os.name}")
-print(f"The operating system version is: {logging.}")
 
 
 """user_input = ''
